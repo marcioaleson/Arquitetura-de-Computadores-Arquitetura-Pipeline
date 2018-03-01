@@ -1,0 +1,5 @@
+package tipo is
+
+type ESTADO is(soma,subtract,load,store,opAnd,opOr,opNor,opXor,mult,divisao,nop,slt,opSll,opSrl,srav,opSra,srlv,sllv,LUI,MVHMFL);
+
+end package;

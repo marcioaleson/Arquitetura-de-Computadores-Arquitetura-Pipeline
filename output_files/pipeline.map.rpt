@@ -1,0 +1,1003 @@
+Analysis & Synthesis report for pipeline
+Thu Aug 07 21:05:09 2014
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. Analysis & Synthesis IP Cores Summary
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component|altsyncram_5t24:auto_generated
+ 15. Source assignments for Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component|altsyncram_j824:auto_generated
+ 16. Parameter Settings for User Entity Instance: ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component
+ 17. Parameter Settings for User Entity Instance: ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component
+ 18. Parameter Settings for User Entity Instance: ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component
+ 19. Parameter Settings for User Entity Instance: memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component
+ 20. Parameter Settings for User Entity Instance: Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component
+ 21. Parameter Settings for Inferred Entity Instance: ula:ulaDoPipe|lpm_mult:Mult0
+ 22. altsyncram Parameter Settings by Entity Instance
+ 23. lpm_mult Parameter Settings by Entity Instance
+ 24. Port Connectivity Checks: "memory_instruction:memory_instruction_inst"
+ 25. Port Connectivity Checks: "CONTROLE:ControleDoPipe"
+ 26. Port Connectivity Checks: "ula:ulaDoPipe"
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++-----------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status       ; Successful - Thu Aug 07 21:05:07 2014       ;
+; Quartus II 32-bit Version         ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                     ; pipeline                                    ;
+; Top-level Entity Name             ; pipeline                                    ;
+; Family                            ; Arria II GX                                 ;
+; Logic utilization                 ; N/A                                         ;
+;     Combinational ALUTs           ; 3,223                                       ;
+;     Memory ALUTs                  ; 0                                           ;
+;     Dedicated logic registers     ; 1,551                                       ;
+; Total registers                   ; 1551                                        ;
+; Total pins                        ; 66                                          ;
+; Total virtual pins                ; 0                                           ;
+; Total block memory bits           ; 262,144                                     ;
+; DSP block 18-bit elements         ; 4                                           ;
+; Total GXB Receiver Channel PCS    ; 0                                           ;
+; Total GXB Receiver Channel PMA    ; 0                                           ;
+; Total GXB Transmitter Channel PCS ; 0                                           ;
+; Total GXB Transmitter Channel PMA ; 0                                           ;
+; Total PLLs                        ; 0                                           ;
+; Total DLLs                        ; 0                                           ;
++-----------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                           ; pipeline           ; pipeline           ;
+; Family name                                                                     ; Arria II GX        ; Cyclone IV GX      ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                        ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                               ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization                                                    ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                       ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                                                                               ; Library ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; boyer_moore.mif                  ; yes             ; User Memory Initialization File  ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/boyer_moore.mif            ;         ;
+; ula.vhd                          ; yes             ; User VHDL File                   ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ula.vhd                    ;         ;
+; tipo.vhd                         ; yes             ; User VHDL File                   ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/tipo.vhd                   ;         ;
+; pipeline.vhd                     ; yes             ; User VHDL File                   ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/pipeline.vhd               ;         ;
+; memory_instruction.vhd           ; yes             ; User Wizard-Generated File       ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd     ;         ;
+; Logical_Shifter.vhd              ; yes             ; User Wizard-Generated File       ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd        ;         ;
+; DIVIDER.vhd                      ; yes             ; User Wizard-Generated File       ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd                ;         ;
+; Data_Memory.vhd                  ; yes             ; User Wizard-Generated File       ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd            ;         ;
+; DATA.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DATA.mif                   ;         ;
+; controle.vhd                     ; yes             ; User VHDL File                   ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd               ;         ;
+; Arith_Shifter.vhd                ; yes             ; User Wizard-Generated File       ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd          ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                                                              ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc                                                                                             ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                                                         ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                                                                                              ;         ;
+; db/lpm_divide_9hp.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/db/lpm_divide_9hp.tdf      ;         ;
+; db/sign_div_unsign_39h.tdf       ; yes             ; Auto-Generated Megafunction      ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/db/sign_div_unsign_39h.tdf ;         ;
+; db/alt_u_div_l6f.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/db/alt_u_div_l6f.tdf       ;         ;
+; lpm_clshift.tdf                  ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_clshift.tdf                                                                                             ;         ;
+; db/lpm_clshift_vjc.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/db/lpm_clshift_vjc.tdf     ;         ;
+; db/lpm_clshift_euc.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/db/lpm_clshift_euc.tdf     ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                              ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                       ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                 ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                              ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                               ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                                                                                                  ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc                                                                                                  ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                                                                                                ;         ;
+; db/altsyncram_5t24.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/db/altsyncram_5t24.tdf     ;         ;
+; db/altsyncram_j824.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/db/altsyncram_j824.tdf     ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                                                                ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                                                             ;         ;
+; multcore.inc                     ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/multcore.inc                                                                                                ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/bypassff.inc                                                                                                ;         ;
+; altshift.inc                     ; yes             ; Megafunction                     ; c:/altera/13.1/quartus/libraries/megafunctions/altshift.inc                                                                                                ;         ;
+; db/mult_m9t.tdf                  ; yes             ; Auto-Generated Megafunction      ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/db/mult_m9t.tdf            ;         ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++-----------------------------------------------+-------------+
+; Resource                                      ; Usage       ;
++-----------------------------------------------+-------------+
+; Estimated ALUTs Used                          ; 3223        ;
+;     -- Combinational ALUTs                    ; 3223        ;
+;     -- Memory ALUTs                           ; 0           ;
+;     -- LUT_REGs                               ; 0           ;
+; Dedicated logic registers                     ; 1551        ;
+;                                               ;             ;
+; Estimated ALUTs Unavailable                   ; 160         ;
+;     -- Due to unpartnered combinational logic ; 160         ;
+;     -- Due to Memory ALUTs                    ; 0           ;
+;                                               ;             ;
+; Total combinational functions                 ; 3223        ;
+; Combinational ALUT usage by number of inputs  ;             ;
+;     -- 7 input functions                      ; 65          ;
+;     -- 6 input functions                      ; 938         ;
+;     -- 5 input functions                      ; 617         ;
+;     -- 4 input functions                      ; 1029        ;
+;     -- <=3 input functions                    ; 574         ;
+;                                               ;             ;
+; Combinational ALUTs by mode                   ;             ;
+;     -- normal mode                            ; 2387        ;
+;     -- extended LUT mode                      ; 65          ;
+;     -- arithmetic mode                        ; 771         ;
+;     -- shared arithmetic mode                 ; 0           ;
+;                                               ;             ;
+; Estimated ALUT/register pairs used            ; 4463        ;
+;                                               ;             ;
+; Total registers                               ; 1551        ;
+;     -- Dedicated logic registers              ; 1551        ;
+;     -- I/O registers                          ; 0           ;
+;     -- LUT_REGs                               ; 0           ;
+;                                               ;             ;
+;                                               ;             ;
+; I/O pins                                      ; 66          ;
+; Total MLAB memory bits                        ; 0           ;
+; Total block memory bits                       ; 262144      ;
+; DSP block 18-bit elements                     ; 4           ;
+; Maximum fan-out node                          ; clock~input ;
+; Maximum fan-out                               ; 1615        ;
+; Total fan-out                                 ; 22726       ;
+; Average fan-out                               ; 4.57        ;
++-----------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                            ;
++-------------------------------------------------+-------------------+--------------+-------------------+---------------------+---------+-----------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP 18-bit Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                          ; Library Name ;
++-------------------------------------------------+-------------------+--------------+-------------------+---------------------+---------+-----------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |pipeline                                       ; 3223 (1428)       ; 1551 (1551)  ; 262144            ; 4                   ; 0       ; 0         ; 0         ; 1         ; 66   ; 0            ; |pipeline                                                                                                                                                    ; work         ;
+;    |CONTROLE:ControleDoPipe|                    ; 35 (35)           ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|CONTROLE:ControleDoPipe                                                                                                                            ; work         ;
+;    |Data_Memory:Data_Memory_inst|               ; 0 (0)             ; 0 (0)        ; 131072            ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|Data_Memory:Data_Memory_inst                                                                                                                       ; work         ;
+;       |altsyncram:altsyncram_component|         ; 0 (0)             ; 0 (0)        ; 131072            ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component                                                                                       ; work         ;
+;          |altsyncram_j824:auto_generated|       ; 0 (0)             ; 0 (0)        ; 131072            ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component|altsyncram_j824:auto_generated                                                        ; work         ;
+;    |memory_instruction:memory_instruction_inst| ; 0 (0)             ; 0 (0)        ; 131072            ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|memory_instruction:memory_instruction_inst                                                                                                         ; work         ;
+;       |altsyncram:altsyncram_component|         ; 0 (0)             ; 0 (0)        ; 131072            ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component                                                                         ; work         ;
+;          |altsyncram_5t24:auto_generated|       ; 0 (0)             ; 0 (0)        ; 131072            ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component|altsyncram_5t24:auto_generated                                          ; work         ;
+;    |ula:ulaDoPipe|                              ; 1760 (284)        ; 0 (0)        ; 0                 ; 4                   ; 0       ; 0         ; 0         ; 1         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe                                                                                                                                      ; work         ;
+;       |Arith_Shifter:Arith_Shifter_inst|        ; 55 (0)            ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst                                                                                                     ; work         ;
+;          |lpm_clshift:LPM_CLSHIFT_component|    ; 55 (0)            ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component                                                                   ; work         ;
+;             |lpm_clshift_euc:auto_generated|    ; 55 (55)           ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_euc:auto_generated                                    ; work         ;
+;       |DIVIDER:DIVIDER_inst|                    ; 1244 (0)          ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|DIVIDER:DIVIDER_inst                                                                                                                 ; work         ;
+;          |lpm_divide:LPM_DIVIDE_component|      ; 1244 (0)          ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component                                                                                 ; work         ;
+;             |lpm_divide_9hp:auto_generated|     ; 1244 (0)          ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_9hp:auto_generated                                                   ; work         ;
+;                |sign_div_unsign_39h:divider|    ; 1244 (132)        ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_9hp:auto_generated|sign_div_unsign_39h:divider                       ; work         ;
+;                   |alt_u_div_l6f:divider|       ; 1112 (1112)       ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_9hp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_l6f:divider ; work         ;
+;       |Logical_Shifter:Logical_Shifter_inst|    ; 177 (0)           ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst                                                                                                 ; work         ;
+;          |lpm_clshift:LPM_CLSHIFT_component|    ; 177 (0)           ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component                                                               ; work         ;
+;             |lpm_clshift_vjc:auto_generated|    ; 177 (177)         ; 0 (0)        ; 0                 ; 0                   ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated                                ; work         ;
+;       |lpm_mult:Mult0|                          ; 0 (0)             ; 0 (0)        ; 0                 ; 4                   ; 0       ; 0         ; 0         ; 1         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|lpm_mult:Mult0                                                                                                                       ; work         ;
+;          |mult_m9t:auto_generated|              ; 0 (0)             ; 0 (0)        ; 0                 ; 4                   ; 0       ; 0         ; 0         ; 1         ; 0    ; 0            ; |pipeline|ula:ulaDoPipe|lpm_mult:Mult0|mult_m9t:auto_generated                                                                                               ; work         ;
++-------------------------------------------------+-------------------+--------------+-------------------+---------------------+---------+-----------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                 ;
++----------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+-----------------+
+; Name                                                                                                                 ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF             ;
++----------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+-----------------+
+; Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component|altsyncram_j824:auto_generated|ALTSYNCRAM               ; AUTO ; Single Port ; 4096         ; 32           ; --           ; --           ; 131072 ; DATA.mif        ;
+; memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component|altsyncram_5t24:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 4096         ; 32           ; --           ; --           ; 131072 ; boyer_moore.mif ;
++----------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+-----------------+
+
+
++---------------------------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary                        ;
++-------------------------------------------------------+-------------+
+; Statistic                                             ; Number Used ;
++-------------------------------------------------------+-------------+
+; Simple Multipliers (9-bit)                            ; 0           ;
+; Simple Multipliers (12-bit)                           ; 0           ;
+; Simple Multipliers (18-bit)                           ; 0           ;
+; Simple Multipliers (36-bit)                           ; 1           ;
+; Multiply Accumulators (18-bit)                        ; 0           ;
+; Multiply Accumulator with Chain-out Adders (18-bit)   ; 0           ;
+; Two-Multipliers Adders (18-bit)                       ; 0           ;
+; Loopback Multipliers (18-bit)                         ; 0           ;
+; Four-Multipliers Adders (18-bit)                      ; 0           ;
+; Four-Multipliers Adder with Chain-out Adders (18-bit) ; 0           ;
+; Shift DSP Blocks (32-bit)                             ; 0           ;
+; Double DSP Blocks                                     ; 0           ;
+; DSP Blocks                                            ; --          ;
+; DSP Block 18-bit Elements                             ; 4           ;
+; Signed Multipliers                                    ; 0           ;
+; Unsigned Multipliers                                  ; 1           ;
+; Mixed Sign Multipliers                                ; 0           ;
+; Variable Sign Multipliers                             ; 0           ;
+; Dedicated Shift Register Chains                       ; 0           ;
+; Dedicated Output Adder Chains                         ; 0           ;
++-------------------------------------------------------+-------------+
+Note: number of DSP Blocks used is only available after a successful fit.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                                 ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                              ; IP Include File                                                                                                                                        ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |pipeline|Data_Memory:Data_Memory_inst                       ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd        ;
+; Altera ; ROM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |pipeline|memory_instruction:memory_instruction_inst         ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd ;
+; Altera ; LPM_CLSHIFT  ; N/A     ; N/A          ; N/A          ; |pipeline|ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst     ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd      ;
+; Altera ; LPM_DIVIDE   ; N/A     ; N/A          ; N/A          ; |pipeline|ula:ulaDoPipe|DIVIDER:DIVIDER_inst                 ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd            ;
+; Altera ; LPM_CLSHIFT  ; N/A     ; N/A          ; N/A          ; |pipeline|ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst ; C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd    ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++----------------------------------------+---------------------------------------------+
+; Register name                          ; Reason for Removal                          ;
++----------------------------------------+---------------------------------------------+
+; ID_EX_OPALU[5]                         ; Stuck at GND due to stuck port data_in      ;
+; ID_EX_RD[4]                            ; Merged with ID_EX_signalExt[31]             ;
+; ID_EX_signalExt[15..30]                ; Merged with ID_EX_signalExt[31]             ;
+; ID_EX_RD[3]                            ; Merged with ID_EX_signalExt[14]             ;
+; ID_EX_RD[2]                            ; Merged with ID_EX_signalExt[13]             ;
+; ID_EX_RD[1]                            ; Merged with ID_EX_signalExt[12]             ;
+; ID_EX_RD[0]                            ; Merged with ID_EX_signalExt[11]             ;
+; banco_de_registradores[0][31]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][30]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][29]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][28]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][27]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][26]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][25]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][24]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][23]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][22]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][21]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][20]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][19]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][18]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][17]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][16]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][15]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][14]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][13]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][12]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][11]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][10]          ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][9]           ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][8]           ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][7]           ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][6]           ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][5]           ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][4]           ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][3]           ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][2]           ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][1]           ; Stuck at GND due to stuck port clock_enable ;
+; banco_de_registradores[0][0]           ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 54 ;                                             ;
++----------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1551  ;
+; Number of registers using Synchronous Clear  ; 168   ;
+; Number of registers using Synchronous Load   ; 143   ;
+; Number of registers using Asynchronous Clear ; 1548  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1125  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 3:1                ; 64 bits   ; 128 ALUTs     ; 0 ALUTs              ; 128 ALUTs              ; Yes        ; |pipeline|IF_ID_IR[27]                   ;
+; 4:1                ; 32 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |pipeline|banco_de_registradores[31][13] ;
+; 33:1               ; 32 bits   ; 704 ALUTs     ; 64 ALUTs             ; 640 ALUTs              ; Yes        ; |pipeline|EX_MEM_ALUresult[33]           ;
+; 9:1                ; 2 bits    ; 12 ALUTs      ; 6 ALUTs              ; 6 ALUTs                ; Yes        ; |pipeline|PC[31]                         ;
+; 9:1                ; 5 bits    ; 30 ALUTs      ; 25 ALUTs             ; 5 ALUTs                ; Yes        ; |pipeline|ID_EX_SHAMT[0]                 ;
+; 26:1               ; 15 bits   ; 255 ALUTs     ; 90 ALUTs             ; 165 ALUTs              ; Yes        ; |pipeline|EX_MEM_ALUresult[2]            ;
+; 27:1               ; 15 bits   ; 270 ALUTs     ; 120 ALUTs            ; 150 ALUTs              ; Yes        ; |pipeline|EX_MEM_ALUresult[25]           ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |pipeline|dataForReg[22]                 ;
+; 4:1                ; 32 bits   ; 64 ALUTs      ; 64 ALUTs             ; 0 ALUTs                ; No         ; |pipeline|Mux256                         ;
+; 4:1                ; 32 bits   ; 64 ALUTs      ; 64 ALUTs             ; 0 ALUTs                ; No         ; |pipeline|Mux291                         ;
+; 3:1                ; 16 bits   ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |pipeline|dataToMemory[24]               ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |pipeline|Mux167                         ;
+; 4:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |pipeline|dataForReg[15]                 ;
+; 5:1                ; 32 bits   ; 96 ALUTs      ; 96 ALUTs             ; 0 ALUTs                ; No         ; |pipeline|Selector5                      ;
+; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; No         ; |pipeline|Mux273                         ;
+; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; No         ; |pipeline|Mux195                         ;
+; 15:1               ; 34 bits   ; 340 ALUTs     ; 34 ALUTs             ; 306 ALUTs              ; No         ; |pipeline|ula:ulaDoPipe|Mux16            ;
+; 11:1               ; 2 bits    ; 14 ALUTs      ; 2 ALUTs              ; 12 ALUTs               ; No         ; |pipeline|ula:ulaDoPipe|Mux5             ;
+; 9:1                ; 2 bits    ; 12 ALUTs      ; 8 ALUTs              ; 4 ALUTs                ; No         ; |pipeline|Mux5                           ;
+; 9:1                ; 28 bits   ; 168 ALUTs     ; 112 ALUTs            ; 56 ALUTs               ; No         ; |pipeline|Mux12                          ;
+; 9:1                ; 12 bits   ; 72 ALUTs      ; 60 ALUTs             ; 12 ALUTs               ; No         ; |pipeline|fioIR[5]                       ;
+; 12:1               ; 32 bits   ; 256 ALUTs     ; 192 ALUTs            ; 64 ALUTs               ; No         ; |pipeline|Mux61                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component|altsyncram_5t24:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                 ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                  ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component|altsyncram_j824:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                   ;
++---------------------------------+--------------------+------+------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                    ;
++---------------------------------+--------------------+------+------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component ;
++------------------------+----------------+-----------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                  ;
++------------------------+----------------+-----------------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Signed Integer                                                        ;
+; LPM_WIDTHD             ; 32             ; Signed Integer                                                        ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                               ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                               ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                               ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                               ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                               ;
+; CBXI_PARAMETER         ; lpm_divide_9hp ; Untyped                                                               ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                               ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                               ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                          ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                        ;
++------------------------+----------------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component ;
++----------------+-----------------+------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value           ; Type                                                                                           ;
++----------------+-----------------+------------------------------------------------------------------------------------------------+
+; LPM_PIPELINE   ; 0               ; Untyped                                                                                        ;
+; LPM_SHIFTTYPE  ; LOGICAL         ; Untyped                                                                                        ;
+; LPM_WIDTH      ; 32              ; Signed Integer                                                                                 ;
+; LPM_WIDTHDIST  ; 5               ; Signed Integer                                                                                 ;
+; CBXI_PARAMETER ; lpm_clshift_vjc ; Untyped                                                                                        ;
++----------------+-----------------+------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component ;
++----------------+-----------------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value           ; Type                                                                                       ;
++----------------+-----------------+--------------------------------------------------------------------------------------------+
+; LPM_PIPELINE   ; 0               ; Untyped                                                                                    ;
+; LPM_SHIFTTYPE  ; ARITHMETIC      ; Untyped                                                                                    ;
+; LPM_WIDTH      ; 32              ; Signed Integer                                                                             ;
+; LPM_WIDTHDIST  ; 5               ; Signed Integer                                                                             ;
+; CBXI_PARAMETER ; lpm_clshift_euc ; Untyped                                                                                    ;
++----------------+-----------------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                        ;
++------------------------------------+----------------------+-------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                     ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                  ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                              ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                     ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                                     ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                              ;
+; WIDTHAD_A                          ; 12                   ; Signed Integer                                              ;
+; NUMWORDS_A                         ; 4096                 ; Signed Integer                                              ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                     ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                     ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                     ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                     ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                     ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                     ;
+; WIDTH_B                            ; 1                    ; Signed Integer                                              ;
+; WIDTHAD_B                          ; 1                    ; Signed Integer                                              ;
+; NUMWORDS_B                         ; 0                    ; Signed Integer                                              ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                     ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                     ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                     ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                     ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                     ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                     ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                     ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                     ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                     ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                     ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                     ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                     ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                              ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                                              ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                     ;
+; BYTE_SIZE                          ; 8                    ; Signed Integer                                              ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                     ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                     ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                     ;
+; INIT_FILE                          ; boyer_moore.mif      ; Untyped                                                     ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                     ;
+; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                                              ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                     ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                     ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                     ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                     ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                     ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                     ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                     ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                     ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                                              ;
+; DEVICE_FAMILY                      ; Arria II GX          ; Untyped                                                     ;
+; CBXI_PARAMETER                     ; altsyncram_5t24      ; Untyped                                                     ;
++------------------------------------+----------------------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                          ;
++------------------------------------+----------------------+-----------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                       ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                       ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                       ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                ;
+; WIDTHAD_A                          ; 12                   ; Signed Integer                                ;
+; NUMWORDS_A                         ; 4096                 ; Signed Integer                                ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                       ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                       ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                       ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                       ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                       ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                       ;
+; WIDTH_B                            ; 1                    ; Signed Integer                                ;
+; WIDTHAD_B                          ; 1                    ; Signed Integer                                ;
+; NUMWORDS_B                         ; 0                    ; Signed Integer                                ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                       ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                       ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                       ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                       ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                       ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                       ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                       ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                       ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                       ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                       ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                       ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                       ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                                ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                       ;
+; BYTE_SIZE                          ; 8                    ; Signed Integer                                ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                       ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                       ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                       ;
+; INIT_FILE                          ; DATA.mif             ; Untyped                                       ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                       ;
+; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                                ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                       ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                       ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                       ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                       ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                       ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                       ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                       ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                       ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                                ;
+; DEVICE_FAMILY                      ; Arria II GX          ; Untyped                                       ;
+; CBXI_PARAMETER                     ; altsyncram_j824      ; Untyped                                       ;
++------------------------------------+----------------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ula:ulaDoPipe|lpm_mult:Mult0      ;
++------------------------------------------------+-------------+---------------------+
+; Parameter Name                                 ; Value       ; Type                ;
++------------------------------------------------+-------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON          ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF         ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON          ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF         ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 32          ; Untyped             ;
+; LPM_WIDTHB                                     ; 32          ; Untyped             ;
+; LPM_WIDTHP                                     ; 64          ; Untyped             ;
+; LPM_WIDTHR                                     ; 64          ; Untyped             ;
+; LPM_WIDTHS                                     ; 1           ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED    ; Untyped             ;
+; LPM_PIPELINE                                   ; 0           ; Untyped             ;
+; LATENCY                                        ; 0           ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO          ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO          ; Untyped             ;
+; USE_EAB                                        ; OFF         ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5           ; Untyped             ;
+; DEVICE_FAMILY                                  ; Arria II GX ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL      ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT         ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO        ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0           ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0           ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_m9t    ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx          ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx          ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF         ; Untyped             ;
++------------------------------------------------+-------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                       ;
++-------------------------------------------+----------------------------------------------------------------------------+
+; Name                                      ; Value                                                                      ;
++-------------------------------------------+----------------------------------------------------------------------------+
+; Number of entity instances                ; 2                                                                          ;
+; Entity Instance                           ; memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                                        ;
+;     -- WIDTH_A                            ; 32                                                                         ;
+;     -- NUMWORDS_A                         ; 4096                                                                       ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                               ;
+;     -- WIDTH_B                            ; 1                                                                          ;
+;     -- NUMWORDS_B                         ; 0                                                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                     ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                               ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                       ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                  ;
+; Entity Instance                           ; Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component               ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                ;
+;     -- WIDTH_A                            ; 32                                                                         ;
+;     -- NUMWORDS_A                         ; 4096                                                                       ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                               ;
+;     -- WIDTH_B                            ; 1                                                                          ;
+;     -- NUMWORDS_B                         ; 0                                                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                     ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                               ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                       ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                  ;
++-------------------------------------------+----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                       ;
++---------------------------------------+------------------------------+
+; Name                                  ; Value                        ;
++---------------------------------------+------------------------------+
+; Number of entity instances            ; 1                            ;
+; Entity Instance                       ; ula:ulaDoPipe|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 32                           ;
+;     -- LPM_WIDTHB                     ; 32                           ;
+;     -- LPM_WIDTHP                     ; 64                           ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                     ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                           ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                           ;
+;     -- USE_EAB                        ; OFF                          ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                         ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                           ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                           ;
++---------------------------------------+------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "memory_instruction:memory_instruction_inst" ;
++---------------+-------+----------+-------------------------------------+
+; Port          ; Type  ; Severity ; Details                             ;
++---------------+-------+----------+-------------------------------------+
+; address[1..0] ; Input ; Info     ; Stuck at GND                        ;
++---------------+-------+----------+-------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CONTROLE:ControleDoPipe"                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; op   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ula:ulaDoPipe"                                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; operacao ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:01:35     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Thu Aug 07 21:02:45 2014
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file controlealu.vhd
+    Info (12022): Found design unit 1: CONTROLEALU-ControlAlu
+    Info (12023): Found entity 1: CONTROLEALU
+Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+    Info (12022): Found design unit 1: ula-operacoes_ula
+    Info (12023): Found entity 1: ula
+Info (12021): Found 1 design units, including 0 entities, in source file tipo.vhd
+    Info (12022): Found design unit 1: tipo
+Info (12021): Found 2 design units, including 1 entities, in source file pipeline.vhd
+    Info (12022): Found design unit 1: pipeline-pipeline
+    Info (12023): Found entity 1: pipeline
+Info (12021): Found 2 design units, including 1 entities, in source file memory_instruction.vhd
+    Info (12022): Found design unit 1: memory_instruction-SYN
+    Info (12023): Found entity 1: memory_instruction
+Info (12021): Found 2 design units, including 1 entities, in source file logical_shifter.vhd
+    Info (12022): Found design unit 1: logical_shifter-SYN
+    Info (12023): Found entity 1: Logical_Shifter
+Info (12021): Found 2 design units, including 1 entities, in source file divider.vhd
+    Info (12022): Found design unit 1: divider-SYN
+    Info (12023): Found entity 1: DIVIDER
+Info (12021): Found 2 design units, including 1 entities, in source file data_memory.vhd
+    Info (12022): Found design unit 1: data_memory-SYN
+    Info (12023): Found entity 1: Data_Memory
+Info (12021): Found 2 design units, including 1 entities, in source file controle.vhd
+    Info (12022): Found design unit 1: CONTROLE-CONTROLE
+    Info (12023): Found entity 1: CONTROLE
+Info (12021): Found 2 design units, including 1 entities, in source file arith_shifter.vhd
+    Info (12022): Found design unit 1: arith_shifter-SYN
+    Info (12023): Found entity 1: Arith_Shifter
+Info (12127): Elaborating entity "pipeline" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at pipeline.vhd(83): object "opAtual" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at pipeline.vhd(84): object "entrandoNoPipe" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at pipeline.vhd(147): object "MEM_WB_ReadData" assigned a value but never read
+Info (12128): Elaborating entity "ula" for hierarchy "ula:ulaDoPipe"
+Info (12128): Elaborating entity "DIVIDER" for hierarchy "ula:ulaDoPipe|DIVIDER:DIVIDER_inst"
+Info (12128): Elaborating entity "lpm_divide" for hierarchy "ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component"
+Info (12130): Elaborated megafunction instantiation "ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component"
+Info (12133): Instantiated megafunction "ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component" with the following parameter:
+    Info (12134): Parameter "lpm_drepresentation" = "SIGNED"
+    Info (12134): Parameter "lpm_hint" = "LPM_REMAINDERPOSITIVE=TRUE"
+    Info (12134): Parameter "lpm_nrepresentation" = "SIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_DIVIDE"
+    Info (12134): Parameter "lpm_widthd" = "32"
+    Info (12134): Parameter "lpm_widthn" = "32"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9hp.tdf
+    Info (12023): Found entity 1: lpm_divide_9hp
+Info (12128): Elaborating entity "lpm_divide_9hp" for hierarchy "ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_9hp:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_39h.tdf
+    Info (12023): Found entity 1: sign_div_unsign_39h
+Info (12128): Elaborating entity "sign_div_unsign_39h" for hierarchy "ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_9hp:auto_generated|sign_div_unsign_39h:divider"
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_l6f.tdf
+    Info (12023): Found entity 1: alt_u_div_l6f
+Info (12128): Elaborating entity "alt_u_div_l6f" for hierarchy "ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_9hp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_l6f:divider"
+Info (12128): Elaborating entity "Logical_Shifter" for hierarchy "ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst"
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component"
+Info (12130): Elaborated megafunction instantiation "ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component"
+Info (12133): Instantiated megafunction "ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component" with the following parameter:
+    Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
+    Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widthdist" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_vjc.tdf
+    Info (12023): Found entity 1: lpm_clshift_vjc
+Info (12128): Elaborating entity "lpm_clshift_vjc" for hierarchy "ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated"
+Info (12128): Elaborating entity "Arith_Shifter" for hierarchy "ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst"
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component"
+Info (12130): Elaborated megafunction instantiation "ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component"
+Info (12133): Instantiated megafunction "ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component" with the following parameter:
+    Info (12134): Parameter "lpm_shifttype" = "ARITHMETIC"
+    Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widthdist" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_euc.tdf
+    Info (12023): Found entity 1: lpm_clshift_euc
+Info (12128): Elaborating entity "lpm_clshift_euc" for hierarchy "ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_euc:auto_generated"
+Info (12128): Elaborating entity "CONTROLE" for hierarchy "CONTROLE:ControleDoPipe"
+Info (12128): Elaborating entity "memory_instruction" for hierarchy "memory_instruction:memory_instruction_inst"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "Arria II GX"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "boyer_moore.mif"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "4096"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "12"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5t24.tdf
+    Info (12023): Found entity 1: altsyncram_5t24
+Info (12128): Elaborating entity "altsyncram_5t24" for hierarchy "memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component|altsyncram_5t24:auto_generated"
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:Data_Memory_inst"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "UNUSED"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "Arria II GX"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "DATA.mif"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "4096"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "12"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_j824.tdf
+    Info (12023): Found entity 1: altsyncram_j824
+Info (12128): Elaborating entity "altsyncram_j824" for hierarchy "Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component|altsyncram_j824:auto_generated"
+Info (286030): Timing-Driven Synthesis is running
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "ula:ulaDoPipe|Mult0"
+Info (12130): Elaborated megafunction instantiation "ula:ulaDoPipe|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "ula:ulaDoPipe|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "32"
+    Info (12134): Parameter "LPM_WIDTHB" = "32"
+    Info (12134): Parameter "LPM_WIDTHP" = "64"
+    Info (12134): Parameter "LPM_WIDTHR" = "64"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_m9t.tdf
+    Info (12023): Found entity 1: mult_m9t
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "pc_out[0]" is stuck at GND
+    Warning (13410): Pin "pc_out[1]" is stuck at GND
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 4815 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 4681 logic cells
+    Info (21064): Implemented 64 RAM segments
+    Info (21062): Implemented 4 DSP elements
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 496 megabytes
+    Info: Processing ended: Thu Aug 07 21:05:09 2014
+    Info: Elapsed time: 00:02:24
+    Info: Total CPU time (on all processors): 00:01:32
+
+

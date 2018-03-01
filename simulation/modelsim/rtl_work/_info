@@ -1,0 +1,328 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Marcio Áleson\Documents\CDC-UFPI\Arquitetura de Computadores\Trabalho Arquitetura\MULTICICLO E PIPELINE\PIPELINE FINAL\simulation\modelsim
+Earith_shifter
+Z1 w1391197678
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Marcio Áleson\Documents\CDC-UFPI\Arquitetura de Computadores\Trabalho Arquitetura\MULTICICLO E PIPELINE\PIPELINE FINAL\simulation\modelsim
+Z5 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd
+Z6 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd
+l0
+L42
+VRm1NcO9afh]Yhi2MZ4?360
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1407457485.061000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd|
+Z10 !s107 C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 4^R0GcOQNa_8?X1Z8MnTo3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 13 arith_shifter 0 22 Rm1NcO9afh]Yhi2MZ4?360
+l74
+L53
+V0dh<I<D2f=`;7KCRGL?9b0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 ?aFfLe1eXoaa8Q_CCCFS13
+!i10b 1
+Econtrole
+Z13 w1399589894
+Z14 DPx4 work 4 tipo 0 22 jdnm5mmAJRhW:ELQ1f>KV2
+Z15 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R4
+Z17 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd
+Z18 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd
+l0
+L7
+VXfi2kOfObGn?5Gn6@n<Ij1
+!s100 4:WL7cc:`L;_RDDMMDKTe2
+R7
+31
+!i10b 1
+Z19 !s108 1407457486.748000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd|
+Z21 !s107 C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd|
+R11
+R12
+Acontrole
+R14
+R15
+R16
+R2
+R3
+DEx4 work 8 controle 0 22 Xfi2kOfObGn?5Gn6@n<Ij1
+l33
+L28
+VRbJz1UjU@Ho=jzXQHiK252
+!s100 HzK0<n36laoP7YM_FFUKH3
+R7
+31
+!i10b 1
+R19
+R20
+R21
+R11
+R12
+Edata_memory
+Z22 w1391017952
+Z23 DPx9 altera_mf 20 altera_mf_components 0 22 zh;bE09gCIPDVLK?MN49L3
+R2
+R3
+R4
+Z24 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd
+Z25 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd
+l0
+L42
+V_1eEWkS:dBaT7NBf7Y5H=2
+R7
+31
+Z26 !s108 1407457484.514000
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd|
+Z28 !s107 C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd|
+R11
+R12
+!s100 ]^cUQcnEfGhWaN7hi3bO_3
+!i10b 1
+Asyn
+R23
+R2
+R3
+DEx4 work 11 data_memory 0 22 _1eEWkS:dBaT7NBf7Y5H=2
+l58
+L54
+VVaO6lSO1KZYnVSmEAfmPo0
+R7
+31
+R26
+R27
+R28
+R11
+R12
+!s100 DbP]A]zX=L70Hz0Me_^<d0
+!i10b 1
+Edivider
+Z29 w1391190300
+R2
+R3
+R4
+Z30 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd
+Z31 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd
+l0
+L42
+VeYCXOlPIh9@eoD2C^n]@O3
+R7
+31
+Z32 !s108 1407457483.998000
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd|
+Z34 !s107 C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd|
+R11
+R12
+!s100 HIY1[kRnFj6j5i8Jz3UG82
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 7 divider 0 22 eYCXOlPIh9@eoD2C^n]@O3
+l77
+L53
+V<@J=7[g;Dah>3H[3;fb@S1
+R7
+31
+R32
+R33
+R34
+R11
+R12
+!s100 3EiSEgQQY7B39=noJmO^]0
+!i10b 1
+Elogical_shifter
+Z35 w1391196110
+R2
+R3
+R4
+Z36 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd
+Z37 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd
+l0
+L42
+V<o;:;g_NhAO0OND1j;9cZ1
+R7
+31
+Z38 !s108 1407457483.320000
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd|
+Z40 !s107 C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd|
+R11
+R12
+!s100 `m9Q>U54=a=Gj[Nja[cLk2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 15 logical_shifter 0 22 <o;:;g_NhAO0OND1j;9cZ1
+l74
+L53
+V<N>SHB<Tcn4?hZ>5X6<0F3
+R7
+31
+R38
+R39
+R40
+R11
+R12
+!s100 z3o_EGRJ@z9f:IhSdnY6J1
+!i10b 1
+Ememory_instruction
+Z41 w1407347899
+R23
+R2
+R3
+R4
+Z42 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd
+Z43 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd
+l0
+L42
+VLkV7^^cYca:3e_nh<^e;<2
+R7
+31
+Z44 !s108 1407457482.651000
+Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd|
+Z46 !s107 C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd|
+R11
+R12
+!s100 cT<YlOTJ:^Iomg3WBZ4b@2
+!i10b 1
+Asyn
+R23
+R2
+R3
+DEx4 work 18 memory_instruction 0 22 LkV7^^cYca:3e_nh<^e;<2
+l56
+L52
+V<Z5TQd6di9IOOUY5^Xln22
+R7
+31
+R44
+R45
+R46
+R11
+R12
+!s100 4PNhW^dS;;V0OWHJF=E@^1
+!i10b 1
+Epipeline
+Z47 w1401402320
+R23
+Z48 DPx3 lpm 14 lpm_components 0 22 Wog`[CL=7N916SZzK3:hL2
+R14
+R15
+R16
+R2
+R3
+R4
+Z49 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/pipeline.vhd
+Z50 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/pipeline.vhd
+l0
+L11
+VVNn1h4C@F8V=<=B>Ycnk?1
+R7
+31
+Z51 !s108 1407457486.061000
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/pipeline.vhd|
+Z53 !s107 C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/pipeline.vhd|
+R11
+R12
+!s100 `cZiiz9PWlz0SR^L2?7gG0
+!i10b 1
+Apipeline
+R23
+R48
+R14
+R15
+R16
+R2
+R3
+DEx4 work 8 pipeline 0 22 VNn1h4C@F8V=<=B>Ycnk?1
+l262
+L22
+VM2czCR:1<9d[M2<8IDz6V3
+R7
+31
+R51
+R52
+R53
+R11
+R12
+!s100 EelBTolU713dNRd7UKJb30
+!i10b 1
+Ptipo
+w1399588110
+R4
+8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/tipo.vhd
+FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/tipo.vhd
+l0
+L1
+Vjdnm5mmAJRhW:ELQ1f>KV2
+R7
+31
+R11
+R12
+!s100 W5VG;bTOWOo=kIKc;XCLW0
+!i10b 1
+!s108 1407457482.280000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/tipo.vhd|
+!s107 C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/tipo.vhd|
+Eula
+Z54 w1399402234
+R14
+R15
+R16
+R2
+R3
+R4
+Z55 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ula.vhd
+Z56 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ula.vhd
+l0
+L8
+VjFT37JlnM@gNU@2?RPV9b1
+R7
+31
+Z57 !s108 1407457485.514000
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ula.vhd|
+Z59 !s107 C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ula.vhd|
+R11
+R12
+!s100 eI_P^iE_>FaW>GZI>PPCQ2
+!i10b 1
+Aoperacoes_ula
+R14
+R15
+R16
+R2
+R3
+DEx4 work 3 ula 0 22 jFT37JlnM@gNU@2?RPV9b1
+l71
+L20
+V9R29FCOzW`=ZVjjnoFOk32
+R7
+31
+R57
+R58
+R59
+R11
+R12
+!s100 n1j8D2;cUf1]UZmfE1d`F1
+!i10b 1

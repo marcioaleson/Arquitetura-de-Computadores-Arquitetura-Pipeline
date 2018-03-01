@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="pipeline">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ula:ulaDoPipe|Arith_Shifter:Arith_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_euc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ula:ulaDoPipe|DIVIDER:DIVIDER_inst|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_9hp.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ula:ulaDoPipe|Logical_Shifter:Logical_Shifter_inst|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_vjc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|Data_Memory:Data_Memory_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_j824.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|memory_instruction:memory_instruction_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5t24.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ula:ulaDoPipe|lpm_mult:Mult0" CBX_FILE_NAME="mult_m9t.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

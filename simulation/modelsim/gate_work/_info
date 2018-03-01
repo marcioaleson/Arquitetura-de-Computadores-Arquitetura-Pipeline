@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Juninho\Desktop\TENTATIVA FALHA\simulation\modelsim
+Epipeline
+Z1 w1391776281
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx7 arriaii 17 arriaii_atom_pack 0 22 ;Nzdo2QLS>zDeEUY=Tdbn3
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx7 arriaii 18 arriaii_components 0 22 ^IdMm@Z:TOCGO<ROkj7`@2
+Z8 dC:\Users\Juninho\Desktop\TENTATIVA FALHA\simulation\modelsim
+Z9 8pipeline_3_900mv_100c_slow.vho
+Z10 Fpipeline_3_900mv_100c_slow.vho
+l0
+L34
+VOI9MdJ=N`T=Fl3N50PU:Z0
+!s100 k3]1ZdXWe528zK3c>Qk:A0
+Z11 OV;C;10.1d;51
+31
+!i10b 1
+Z12 !s108 1391808588.377000
+Z13 !s90 -reportprogress|300|-93|-work|work|pipeline_3_900mv_100c_slow.vho|
+Z14 !s107 pipeline_3_900mv_100c_slow.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 pipeline 0 22 OI9MdJ=N`T=Fl3N50PU:Z0
+l61
+L46
+VZ1h3z=;IY6IKATK66gNJI3
+!s100 d?NaX2[a5Rc^H`6dUjFJi2
+R11
+31
+!i10b 1
+R12
+R13
+R14
+R15
+R16

@@ -1,0 +1,86 @@
+{C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity logical_shifter
+-- Compiling architecture syn of logical_shifter
+
+} {} {}} {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity divider
+-- Compiling architecture syn of divider
+
+} {} {}} {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/tipo.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/tipo.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Compiling package tipo
+
+} {} {}} {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ControleAlu.vhd} {2 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ControleAlu.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity controlealu
+-- Compiling architecture controlalu of controlealu
+** Warning: [2] C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ControleAlu.vhd(42): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+
+} {} {}} {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity arith_shifter
+-- Compiling architecture syn of arith_shifter
+
+} {} {}} {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ula.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ula.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package tipo
+-- Compiling entity ula
+-- Compiling architecture operacoes_ula of ula
+
+} {} {}} {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/pipeline.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/pipeline.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package tipo
+-- Loading package lpm_components
+-- Loading package altera_mf_components
+-- Compiling entity pipeline
+-- Compiling architecture pipeline of pipeline
+
+} {} {}} {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity memory_instruction
+-- Compiling architecture syn of memory_instruction
+
+} {} {}} {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity data_memory
+-- Compiling architecture syn of data_memory
+
+} {} {}} {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd} {0 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+** Error: (vcom-11) Could not find work.tipo.
+** Error: C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd(5): (vcom-1195) Cannot find expanded name "work.tipo".
+** Error: C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd(5): Unknown expanded name.
+** Error: C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/controle.vhd(7): VHDL Compiler exiting
+
+} {7.0 11.0} {}}

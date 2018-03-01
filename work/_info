@@ -1,0 +1,262 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\91sp2\modelsim_ase\examples
+Earith_shifter
+Z0 w1391197678
+Z1 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z2 dC:\Users\Marcio Áleson\Documents\CDC-UFPI\Arquitetura de Computadores\Trabalho Arquitetura\MULTICICLO E PIPELINE\PIPELINE FINAL
+Z3 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd
+Z4 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Arith_Shifter.vhd
+l0
+L42
+VDfSPmHTI`HhS6f_fiKdo^0
+Z5 OV;C;6.5b;42
+32
+Z6 o-work work -2002 -explicit -O0
+Z7 tExplicit 1
+!s100 lBI6cQ>RZ2>jQ9VT@o:N43
+Asyn
+R1
+DEx4 work 13 arith_shifter 0 22 DfSPmHTI`HhS6f_fiKdo^0
+l74
+L53
+VF9g<UAea:Sa_RH:NX:]WD2
+R5
+32
+Z8 Mx1 4 ieee 14 std_logic_1164
+R6
+R7
+!s100 SSa5h?k3h;>FDh5eJQ>QE2
+Econtrolealu
+Z9 w1390315752
+Z10 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z11 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+R1
+R2
+Z12 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ControleAlu.vhd
+Z13 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ControleAlu.vhd
+l0
+L6
+V08b_UNLzIcYbT0]3hLK>i3
+R5
+32
+R6
+R7
+!s100 WacBzIUieljB6LUbPQ<Fn0
+Acontrolalu
+R10
+R11
+R1
+DEx4 work 11 controlealu 0 22 08b_UNLzIcYbT0]3hLK>i3
+l17
+L14
+VB2HY^AAeOCzHhGhcnbmk41
+R5
+32
+Z14 Mx3 4 ieee 14 std_logic_1164
+Z15 Mx2 4 ieee 18 std_logic_unsigned
+Z16 Mx1 4 ieee 15 std_logic_arith
+R6
+R7
+!s100 caJXlHRTN<TAm_`aDA8@G1
+Edata_memory
+Z17 w1391017952
+Z18 DPx9 altera_mf 20 altera_mf_components 0 22 Rd25D]Eibh`>_lV2_PFGD2
+R1
+R2
+Z19 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd
+Z20 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Data_Memory.vhd
+l0
+L42
+V@0B=>S5:LU2OWnF2[HFn]0
+R5
+32
+R6
+R7
+!s100 ][2jUOEHKZh<<mARjYLjF1
+Asyn
+R18
+R1
+DEx4 work 11 data_memory 0 22 @0B=>S5:LU2OWnF2[HFn]0
+l58
+L54
+VZ?5haAJlOkZ3S?lKUCADU0
+R5
+32
+Z21 Mx2 4 ieee 14 std_logic_1164
+Z22 Mx1 9 altera_mf 20 altera_mf_components
+R6
+R7
+!s100 ]USkgkH5]RTN:beGfm>oG0
+Edivider
+Z23 w1391190300
+R1
+R2
+Z24 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd
+Z25 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/DIVIDER.vhd
+l0
+L42
+VcR]]M]aEfESO>47B8AzZb2
+R5
+32
+R6
+R7
+!s100 i6?M5PSIMK>92B=X5<5262
+Asyn
+R1
+DEx4 work 7 divider 0 22 cR]]M]aEfESO>47B8AzZb2
+l77
+L53
+VI_D8CaQ4jLAcj2A99:;3a2
+R5
+32
+R8
+R6
+R7
+!s100 ^R`c>c;JemoE?=@D7VV6D2
+Elogical_shifter
+Z26 w1391196110
+R1
+R2
+Z27 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd
+Z28 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/Logical_Shifter.vhd
+l0
+L42
+VaD67zN2SR?G]Ll<F:DG`>2
+R5
+32
+R6
+R7
+!s100 aWc=ihdjPa9XBkiG8fHiC0
+Asyn
+R1
+DEx4 work 15 logical_shifter 0 22 aD67zN2SR?G]Ll<F:DG`>2
+l74
+L53
+VP_0^Cd0mCYWdkWVjonz^63
+R5
+32
+R8
+R6
+R7
+!s100 3Z=R:z4;V?j>LZPFTIjlT0
+Ememory_instruction
+Z29 w1399563810
+R18
+R1
+R2
+Z30 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd
+Z31 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/memory_instruction.vhd
+l0
+L42
+V^b2A:89?DfcFZ65UKX:S`1
+R5
+32
+R6
+R7
+!s100 ;nSEMmISD`:bf8Ybl:7n41
+Asyn
+R18
+R1
+DEx4 work 18 memory_instruction 0 22 ^b2A:89?DfcFZ65UKX:S`1
+l56
+L52
+V0;OJ_DQS:c5FPGG3AR8O@0
+R5
+32
+R21
+R22
+R6
+R7
+!s100 Jd<0G9dMHoe@O4:PVj@]`1
+Epipeline
+Z32 w1401402320
+R18
+Z33 DPx3 lpm 14 lpm_components 0 22 5oNm2=On@ILQ5jXX4JHDF0
+Z34 DPx4 work 4 tipo 0 22 am5bM4DH<Lda>KQFWI51P1
+R10
+R11
+R1
+R2
+Z35 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/pipeline.vhd
+Z36 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/pipeline.vhd
+l0
+L11
+V_@>nSNf]=gddjNR<n>NH51
+!s100 ]eh[OVfZL4Yc5ZoU1A^M^0
+R5
+32
+R6
+R7
+Apipeline
+R18
+R33
+R34
+R10
+R11
+R1
+DEx4 work 8 pipeline 0 22 _@>nSNf]=gddjNR<n>NH51
+l262
+L22
+VlWLACRU]zQBzlb7[o<YV60
+!s100 WzG`42b4ULW7]V]W3D`0o2
+R5
+32
+Z37 Mx6 4 ieee 14 std_logic_1164
+Z38 Mx5 4 ieee 18 std_logic_unsigned
+Z39 Mx4 4 ieee 15 std_logic_arith
+Mx3 4 work 4 tipo
+Mx2 3 lpm 14 lpm_components
+R22
+R6
+R7
+Ptipo
+w1399588110
+R2
+8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/tipo.vhd
+FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/tipo.vhd
+l0
+L1
+Vam5bM4DH<Lda>KQFWI51P1
+R5
+32
+R6
+R7
+!s100 bg2Alam[BNU=@>=U=k2m<3
+Eula
+Z40 w1399402234
+R34
+R10
+R11
+R1
+R2
+Z41 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ula.vhd
+Z42 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/ula.vhd
+l0
+L8
+Vg_fB?U15aEgbSagA@Q1VG2
+R5
+32
+R6
+R7
+!s100 bR88=JG_Zo2P9SJ>dCnHB0
+Aoperacoes_ula
+R34
+R10
+R11
+R1
+DEx4 work 3 ula 0 22 g_fB?U15aEgbSagA@Q1VG2
+l71
+L20
+VYMVb[F5>kbJU9HTjfHVFT2
+R5
+32
+Z43 Mx4 4 ieee 14 std_logic_1164
+Z44 Mx3 4 ieee 18 std_logic_unsigned
+Z45 Mx2 4 ieee 15 std_logic_arith
+Mx1 4 work 4 tipo
+R6
+R7
+!s100 NR^dfHclKBm^gY^H5WKQU1

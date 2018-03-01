@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\91sp2\modelsim_ase\qvl_src\bin
+Epipeline
+Z0 w1401402540
+Z1 DPx7 arriaii 17 arriaii_atom_pack 0 22 Q3MGL<<;]Tdn>XFXNfS5B0
+Z2 DPx7 arriaii 18 arriaii_components 0 22 ;6;=]TeBn_OQ:ZRiL?6nR2
+Z3 DPx4 ieee 16 vital_primitives 0 22 E9g6AWKAc2T]enMfl94If3
+Z4 DPx6 altera 11 dffeas_pack 0 22 AdU<F]5K6AT]On5HW5MVZ3
+Z5 DPx4 ieee 12 vital_timing 0 22 OBWK>;kUYmkG<OChK2lhV1
+Z6 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z7 DPx6 altera 28 altera_primitives_components 0 22 TLgz^mzWka?X89W_9JBaY1
+Z8 dC:\Users\Marcio Áleson\Documents\CDC-UFPI\Arquitetura de Computadores\Trabalho Arquitetura\MULTICICLO E PIPELINE\PIPELINE FINAL\simulation\modelsim
+Z9 8C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/simulation/modelsim/pipeline.vho
+Z10 FC:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/simulation/modelsim/pipeline.vho
+l0
+L36
+V_:<D_::42n>31PbfHTJaf1
+!s100 GYRflToL_l6]:SCXDDT>F1
+Z11 OV;C;6.5b;42
+32
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 pipeline 0 22 _:<D_::42n>31PbfHTJaf1
+l9804
+L114
+V;JPmH8iGQnid5UJ=fDAI03
+!s100 78U<V@@Dg_D@AYARoV0TE1
+R11
+32
+Mx7 6 altera 28 altera_primitives_components
+Z14 Mx6 4 ieee 14 std_logic_1164
+Z15 Mx5 4 ieee 12 vital_timing
+Mx4 6 altera 11 dffeas_pack
+Z16 Mx3 4 ieee 16 vital_primitives
+Mx2 7 arriaii 18 arriaii_components
+Mx1 7 arriaii 17 arriaii_atom_pack
+R12
+R13

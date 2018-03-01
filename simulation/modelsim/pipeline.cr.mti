@@ -1,0 +1,14 @@
+{C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/simulation/modelsim/pipeline.vho} {1 {vcom -work work -2002 -explicit {C:/Users/Marcio Áleson/Documents/CDC-UFPI/Arquitetura de Computadores/Trabalho Arquitetura/MULTICICLO E PIPELINE/PIPELINE FINAL/simulation/modelsim/pipeline.vho}
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package vital_timing
+-- Loading package vital_primitives
+-- Loading package dffeas_pack
+-- Loading package altera_primitives_components
+-- Loading package arriaii_atom_pack
+-- Loading package arriaii_components
+-- Compiling entity pipeline
+-- Compiling architecture structure of pipeline
+
+} {} {}}

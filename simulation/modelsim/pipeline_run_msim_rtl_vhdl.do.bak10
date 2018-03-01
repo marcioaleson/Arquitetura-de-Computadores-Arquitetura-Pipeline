@@ -1,0 +1,17 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/Juninho/Desktop/Juninho_Hazard_salto/tipo.vhd}
+vcom -93 -work work {C:/Users/Juninho/Desktop/Juninho_Hazard_salto/memory_instruction.vhd}
+vcom -93 -work work {C:/Users/Juninho/Desktop/Juninho_Hazard_salto/Logical_Shifter.vhd}
+vcom -93 -work work {C:/Users/Juninho/Desktop/Juninho_Hazard_salto/DIVIDER.vhd}
+vcom -93 -work work {C:/Users/Juninho/Desktop/Juninho_Hazard_salto/Data_Memory.vhd}
+vcom -93 -work work {C:/Users/Juninho/Desktop/Juninho_Hazard_salto/controle.vhd}
+vcom -93 -work work {C:/Users/Juninho/Desktop/Juninho_Hazard_salto/Arith_Shifter.vhd}
+vcom -93 -work work {C:/Users/Juninho/Desktop/Juninho_Hazard_salto/ula.vhd}
+vcom -93 -work work {C:/Users/Juninho/Desktop/Juninho_Hazard_salto/pipeline.vhd}
+
